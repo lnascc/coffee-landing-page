@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: rgba(168, 168, 179, 0.227);
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+  width: 100vw;
+  background: url('./assets/blur-mobile.png') no-repeat;
+  background-position: center;
+  background-position-y: min(20rem, 30rem);
+  background-size: cover;
+  background-color: var(--backgrond);
+  font-family: 'Manrope', sans-serif;  
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1.5px var(--border-menu-mobile);
+}
+
+header img {
+  margin: 3rem 2rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 8.85rem 
+}
+
+main .content p {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 4rem;
+  letter-spacing: 0.02em;
+  margin: 0 10rem;
+}
+
+main .content button {
+  width: 17.41rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  color: var(--text-color);
+
+  border: 1px solid  var(--button);
+  border-radius: 0.6rem;
+  background: none;
+
+  transition: 0.5s;
+}
+
+main .content button:hover {
+  background-color: var(--button);
+}
+
+main .content button img {
+  margin-left: 1rem;
+}
+
+main .content h1 {
+  font-size: 5rem;
+  line-height: 6.8rem;
+}
+
+main .content .stroke {
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  color: var(--backgrond)
+ 
+}
+
+.bg-coffee {
+  width: 100vw;
+  height: 29rem;
+  background: url('./assets/img-coffee.png') no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 3rem;
+  
+}
