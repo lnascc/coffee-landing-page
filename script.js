@@ -2,6 +2,7 @@ const button = document.querySelector('#button')
 const navigation = document.querySelector('.navigation')
 
 button.addEventListener('click', open)
+button.addEventListener('click', close)
 
 function open() {
   navigation.classList.add('active')
@@ -15,4 +16,4 @@ function close() {
   button.classList.remove('menuClose')
   button.classList.add('menuOpen')
 }
-closeButton.addEventListener('click', close)
+
