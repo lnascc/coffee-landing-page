@@ -1,19 +1,8 @@
-const openButton = document.querySelector('.menuOpen')
-const closeButton = document.querySelector('.menuClose')
-const navigation = document.querySelector('.navigation')
+const btnMobile = document.getElementById('btn-mobile')
 
-openButton.addEventListener('click', open)
-
-function open() {
-  navigation.classList.add('active')
-  openButton.classList.remove('menuOpen')
-  openButton.classList.add('menuClose') 
+function toggleMenu() {
+  const nav = document.getElementById('nav')
+  nav.classList.toggle('active')
 }
 
-
-function close() {
-  navigation.classList.remove('active')
-  closeButton.classList.remove('menuClose')
-  closeButton.classList.add('menuOpen')
-}
-closeButton.addEventListener('click', close)
+btnMobile.addEventListener('click', toggleMenu)
